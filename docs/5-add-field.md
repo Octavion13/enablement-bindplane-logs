@@ -43,7 +43,7 @@ We are going to add a field to all logs used in this lab so that they are easily
 !!! info "A Unified Telemetry Pipeline Built on OpenTelemetry"
     Because Bindplane manages OpenTelemetry components, our Add Field follows the [OpenTelemetry Specification](https://opentelemetry.io/docs/specs/otel/logs/data-model/#log-and-event-record-definition), which you may recognize.  We can change the field type to a Resource field, or the Body of the message altogther, as well as the attribute type we're adding here.  We can also choose how to modify the record: Insert, Update or Upsert.
 
-![Configure Processor](img/5-add-field/4-configure-add-fields.png)
+![Configure Processor](img/5-add-field/fieldName_add.png)
 3. Click "Save", and let's preview our changes
 
 ### 5. Preview Changes
@@ -52,7 +52,7 @@ Now we're back to our processor node configuration.  We can see that our process
 
 Notice as well that Bindplane has enriched our logs by adding some fields such as the `log_type` as well as some [OpenTelemetry Resource](https://opentelemetry.io/docs/concepts/resources/) attributes.
 
-![Added Field](img/5-add-field/fieldName_add.png)
+![Added Field](img/5-add-field/5-added-field.png)
 
 Click the "Save" button at the bottom.  We had previously saved our changes to the individual processor that we created.  This will save *all* changes made to this processor node (if we added or edited multiple processors, for example).
 
