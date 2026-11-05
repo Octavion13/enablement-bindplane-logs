@@ -52,7 +52,7 @@ Now we're back to our processor node configuration.  We can see that our process
 
 Notice as well that Bindplane has enriched our logs by adding some fields such as the `log_type` as well as some [OpenTelemetry Resource](https://opentelemetry.io/docs/concepts/resources/) attributes.
 
-![Added Field](img/5-add-field/5-added-field.png)
+![Added Field](img/5-add-field/fieldName_add.png)
 
 Click the "Save" button at the bottom.  We had previously saved our changes to the individual processor that we created.  This will save *all* changes made to this processor node (if we added or edited multiple processors, for example).
 
