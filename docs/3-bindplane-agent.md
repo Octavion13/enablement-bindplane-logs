@@ -24,14 +24,16 @@ You should see some text scroll by, and a message indicating that the Bindplane 
 
 ![Terminal](img/3-bindplane-agent/terminal.png)
 
-You may see some messages instructing you to use `systemctl` to start the Bindplane service.  DON'T DO THAT!  In this environment, you have a command called `startBindplane` instead.  Go ahead and run that in your terminal.
+You may see some messages instructing you to use `systemctl` to start the Bindplane service.  DON'T DO THAT!  In this environment, we will be using the `observiq-otel-collector` utility instead.  Go ahead and run the following commands in your terminal:
 
 ```
-> startBindplane
+cd /opt/observiq-otel-collector/
+sudo ./observiq-otel-collector
+
 ```
 
 !!! warning "Bindplane Startup"
-    Don't use the `systemctl` command to start Bindplane as the installation script mentions.  Instead, use the `startBindplane` command available in your terminal.
+    Don't use the `systemctl` command to start Bindplane as the installation script mentions.  Use the above directions.
 
 Once you've run that command, you should see your agent show up in the Bindplane UI.  It will be named after the host it is installed on.  If you are using a Codespace, it will be your Codespace name.  If you are using a local Dev Container, it will take the name of your Docker implementation.
 
