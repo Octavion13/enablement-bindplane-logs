@@ -38,8 +38,8 @@ Click on the processor name to begin configuring it.
 ### 4. Configure the Add Fields Processor
 We are going to add a field to all logs used in this lab so that they are easily filterable in Dynatrace.
 
-1. Add the Short Description "Add Project Name"
-2. For the field itself, use `project` for the field name, and `bindplane-logs-lab` for the field value.   Keep the defaults for the other values.
+1. Add the Short Description "Add Attendee Name"
+2. For the field itself, use `attendeeName` for the field name, and your name in camel case for the field value(ex. nathanielParks).   Keep the defaults for the other values.
 !!! info "A Unified Telemetry Pipeline Built on OpenTelemetry"
     Because Bindplane manages OpenTelemetry components, our Add Field follows the [OpenTelemetry Specification](https://opentelemetry.io/docs/specs/otel/logs/data-model/#log-and-event-record-definition), which you may recognize.  We can change the field type to a Resource field, or the Body of the message altogther, as well as the attribute type we're adding here.  We can also choose how to modify the record: Insert, Update or Upsert.
 
